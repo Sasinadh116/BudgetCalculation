@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="heading">BudgetCalculation</h1>
+    <section class="the-container">
+        <section id="alcohol">
+            <div class="alcohol-container1">
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?_gl=1*1en7imy*_ga*MjEzODg3MTAyMy4xNzUxMzMzOTcw*_ga_8JE65Q40S6*czE3NTM2ODcxNDYkbzIkZzEkdDE3NTM2ODcxNDgkajU4JGwwJGgw" alt="profile Image" class="img" />
+                </div>
+                <div class="container">
+                    <p class="text-value">Alcohol Amount<br /><input id="drink_bottle_amount" class="type-text" type="text" /></p>
+                </div>
+                <div class="img-container">
+                    <img src="https://wallpapercave.com/wp/wp1911358.jpg" alt="profile Image" class="img" />
+                </div>
+                <div class="container">
+                    <p class="text-value">Mixing Amount<br /><input id="mixing_amount" class="type-text" type="text" /></p>
+                </div>
+            </div>
+            <div class="alcohol-container2">
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?_gl=1*10p2a9r*_ga*MjEzODg3MTAyMy4xNzUxMzMzOTcw*_ga_8JE65Q40S6*czE3NTM2OTgxOTMkbzQkZzEkdDE3NTM2OTgzMDIkajI5JGwwJGgw" alt="profile Image" class="img" />
+                </div>
+                <div class="container">
+                    <p class="text-value">Stuff Amount<br /><input id="stuff_amount" class="type-text" type="text" /></p>
+                </div>
+                <div class="img-container">
+                    <img src="https://wallpapercave.com/wp/wp12814430.jpg" alt="profile Image" class="img" />
+                </div>
+                <div class="container">
+                    <p class="text-value">Stay Amount<br /><input id="stay_amount" class="type-text" type="text" /></p>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn1" onclick="calculate()">CALCULATE</button>
+                <button class="btn2" onclick="CLEAR()">CLEAR</button>
+            </div>
+
+        </section>
+        <section id="total">
+            <h1 class="heading">Total Amount<br /><input id="total_amount" class="total-box" type="text" /></h1>
+            <div class="container">
+                <p class="text-value">Number of persons<br /><input id="split_person_no" class="type-text" type="text" /></p>
+            </div>
+            <div class="btn-container">
+                <button class="btn3" onclick="split()">SPLIT</button>
+            </div>
+            <div class="container">
+                <p class="text-value">Per Head Amount<br /><input id="split_amount" class="type-text" type="text" /></p>
+            </div>
+        </section>
+    </section>
+    <p class="texte-below" id="error_msg">sasi</p>
+
+
+
+
+</body>
+
+</html>
