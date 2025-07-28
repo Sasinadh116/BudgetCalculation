@@ -1,0 +1,106 @@
+let drink_bottles_input = document.getElementById("drink_bottle_amount");
+let mixing_input = document.getElementById("mixing_amount");
+let stuff_input = document.getElementById("stuff_amount");
+let stay_input = document.getElementById("stay_amount");
+let errormsg = document.getElementById("error_msg");
+let total_amount = document.getElementById("total_amount");
+let split_person_no = document.getElementById("split_person_no");
+let split_each_amount = document.getElementById("split_amount");
+
+function calculate() {
+    if (drink_bottles_input.value === "") {
+        errormsg.textContent = "Please Enter Valid Input";
+        total_amount.value = "";
+    } else if (mixing_input.value === "") {
+        errormsg.textContent = "Please Enter Valid Input";
+        total_amount.value = "";
+    } else if (stuff_input.value === "") {
+        errormsg.textContent = "Please Enter Valid Input";
+        total_amount.value = "";
+    } else if (stay_input.value === "") {
+        errormsg.textContent = "Please Enter Valid Input";
+        total_amount.value = "";
+    } else {
+        errormsg.textContent === "";
+        let calculate = parseInt(drink_bottles_input.value) + parseInt(mixing_input.value) + parseInt(stuff_input.value) + parseInt(stay_input.value);
+        total_amount.value = parseInt(calculate);
+    }
+}
+
+function CLEAR() {
+    if (drink_bottles_input.value !== "") {
+        errormsg.textContent = "";
+        total_amount.value = "";
+        drink_bottles_input.value = "";
+        stay_input.value = "";
+        stuff_input.value = "";
+        mixing_input.value = "";
+        split_each_amount.value = "";
+        split_person_no.value = "";
+    } else if (mixing_input.value !== "") {
+        errormsg.textContent = "";
+        total_amount.value = "";
+        drink_bottles_input.value = "";
+        mixing_input.value = "";
+        stuff_input.value = "";
+        stay_input.value = "";
+        split_each_amount.value = "";
+        split_person_no.value = "";
+    } else if (stuff_input.value !== "") {
+        errormsg.textContent = "";
+        total_amount.value = "";
+        stuff_input.value = "";
+        drink_bottles_input.value = "";
+        stay_input.value = "";
+        mixing_input.value = "";
+        split_each_amount.value = "";
+        split_person_no.value = "";
+    } else if (stay_input.value !== "") {
+        errormsg.textContent = "";
+        total_amount.value = "";
+        stay_input.value = "";
+        drink_bottles_input.value = "";
+        mixing_input.value = "";
+        stuff_input.value = "";
+        split_each_amount.value = "";
+        split_person_no.value = "";
+    } else if (total_amount.value !== "") {
+        errormsg.textContent = "";
+        total_amount.value = "";
+        stay_input.value = "";
+        drink_bottles_input.value = "";
+        mixing_input.value = "";
+        stuff_input.value = "";
+        split_each_amount.value = "";
+        split_person_no.value = "";
+    } else if (split_person_no.value !== "") {
+        errormsg.textContent = "";
+        total_amount.value = "";
+        stay_input.value = "";
+        drink_bottles_input.value = "";
+        mixing_input.value = "";
+        stuff_input.value = "";
+        split_each_amount.value = "";
+        split_person_no.value = "";
+    } else if (split_each_amount.value !== "") {
+        errormsg.textContent = "";
+        total_amount.value = "";
+        stay_input.value = "";
+        drink_bottles_input.value = "";
+        mixing_input.value = "";
+        stuff_input.value = "";
+        split_each_amount.value = "";
+        split_person_no.value = "";
+
+    }
+}
+
+function split() {
+    if (total_amount.value !== "") {
+        console.log(split_person_no.value);
+        console.log(total_amount.value);
+        let each_one_amount = parseInt(total_amount.value) / parseInt(split_person_no.value);
+        split_each_amount.value = parseInt(each_one_amount);
+        errormsg.textContent = 'Succes';
+    }
+}
