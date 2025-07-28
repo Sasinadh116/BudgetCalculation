@@ -1,0 +1,126 @@
+body {
+    background-color: beige;
+}
+
+.the-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.alcohol-container1 {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    gap: 1rem;
+}
+
+.alcohol-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 600;
+    color: rgb(89, 52, 100);
+}
+
+#alcohol {
+    height: 100vh;
+    width: auto;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    border-radius: 1rem;
+    height: 10vh;
+    width: auto;
+}
+
+.text-value {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.type-text {
+    height: 4vh;
+    width: 10vw;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.total-box {
+    height: auto;
+    width: 280px;
+    font-size: 30px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn1 {
+    text-align: center;
+    background-color: hsl(193, 11%, 41%);
+    height: auto;
+    width: 200px;
+    padding: 7px;
+    margin: 5px;
+    color: azure;
+    font-size: 30px;
+    border-radius: 1rem;
+    border: transparent;
+}
+
+.btn2 {
+    text-align: center;
+    background-color: hsl(0, 87%, 65%);
+    height: auto;
+    width: 200px;
+    padding: 7px;
+    margin: 5px;
+    color: azure;
+    font-size: 30px;
+    border-radius: 1rem;
+    border: transparent;
+}
+
+.btn3 {
+    text-align: center;
+    background-color: lab(65.9% -63.08 47.7);
+    height: auto;
+    width: 150px;
+    padding: 7px;
+    margin: 5px;
+    color: azure;
+    font-size: 30px;
+    border-radius: 1rem;
+    border: transparent;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+    cursor: pointer;
+}
+
+.texte-below {
+    color: red;
+    text-align: center;
+}
